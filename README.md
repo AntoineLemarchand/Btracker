@@ -8,4 +8,3 @@ HTML/CSS with a touch of javascript
 
 ## Backend
 PHP and mySQL
-
