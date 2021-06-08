@@ -13,7 +13,7 @@ if (mysqli_num_rows($result) == 0) {
   header('Location: ../pages/login.php');
 } else {
   $_SESSION['UserID'] = mysqli_fetch_array($result,MYSQLI_ASSOC)['UserID'];
-  header('Location: test.php');
+  header('Location: ../pages/home.php');
 }
 ?>
 

@@ -1,23 +1,35 @@
 <!DOCTYPE html>
-<form action="<?php $_SERVER['SCRIPT_NAME'] ?>" method="POST">
-<div>
-  <label for="regName">Nom d'utilisateur</label>
-  <input type="text" name="regName">
-<div>
-<div>
-  <label for="regEmail">Adresse Email</label>
-  <input type="text" name="regEmail">
-<div>
-<div>
-  <label for="regPassword">Mot de passe</label>
-  <input type="password" name="regPassword">
-<div>
-<div>
-  <label for="regPassword_confirm">Confirmez le mot de passe</label>
-  <input type="password" name="regPassword_confirm">
-<div>
-<input type="submit" value="Créer le compte">
-</form>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../styles/account.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet"> 
+    <title>Btracker: Register</title>
+  </head>
+
+</html>
+<div id="content">
+  <form action="<?php $_SERVER['SCRIPT_NAME'] ?>" method="POST">
+  <div class="input">
+    <label for="regName">Nom d'utilisateur</label><br/>
+    <input type="text" name="regName">
+  </div>
+  <div class="input">
+    <label for="regEmail">Adresse Email</label><br/>
+    <input type="text" name="regEmail">
+  </div>
+  <div class="input">
+    <label for="regPassword">Mot de passe</label><br/>
+    <input type="password" name="regPassword">
+  </div>
+  <div class="input">
+    <label for="regPassword_confirm">Confirmez le mot de passe</label><br/>
+    <input type="password" name="regPassword_confirm">
+  </div>
+    <input type="submit" value="Créer le compte">
+  </form>
+</div>
 <?php
 if (isset($_POST['regName'])) {
   if ($_POST['regName']!="" && $_POST['regEmail']!="" && $_POST['regPassword']!="") {
