@@ -19,7 +19,7 @@
 <input type="submit" value="Créer le compte">
 </form>
 <?php
-if (isset($_POST['name'])) {
+if (isset($_POST['regName'])) {
   if ($_POST['regName']!="" && $_POST['regEmail']!="" && $_POST['regPassword']!="") {
     if ($_POST['regPassword'] == $_POST['regPassword_confirm']) {
 
