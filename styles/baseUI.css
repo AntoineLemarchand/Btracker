@@ -1,0 +1,112 @@
+html, body {
+  margin: 0;
+  font-family: 'IBM Plex Mono', monospace;
+  overflow-y: hidden;
+}
+
+body {
+  background-color: #504945;
+}
+
+header {
+  background-color: #282828;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+header img {
+  width: 10vh;
+  margin: 10px;
+}
+
+header form, header #account {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header a {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-decoration: none;
+}
+
+header #account {
+  margin-right: 10px;
+  height: 7vh;
+  width: 7vh;
+  font-size: 5vh;
+  border-radius: 7vh;
+  color: #282828;
+}
+
+header form input[type=text] {
+  height: 40px;
+  width: 30vw;
+  font-size: 2vh;
+  border-radius: 5vh 0 0 5vh;
+  border: none;
+  background-color: #a89984;
+}
+
+header form button {
+  height: 42px;
+  width: 5vw;
+  font-size: 2vh;
+  border-radius: 0 5vh 5vh 0;
+  border: none;
+  cursor: pointer;
+  background-color: #7c6f64;
+  color: #ebdbb2;
+}
+
+nav {
+  background-color: #3c3836;
+  color: #ebdbb2;
+  width: 30vh;
+  height: 90vh;
+  padding: 10px;
+}
+
+.option {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  color: #ebdbb2;
+  padding: 2px;
+  margin: 10px;
+  border-radius: 2vh;
+  background-color: #1d2021;
+  transition: color .3s, background-color .3s;
+}
+
+.option i {
+  margin: 10px;
+}
+
+.option p {
+  font-size: 16px;
+}
+
+.option i {
+  font-size: 20px;
+}
+
+.option:hover {
+  color: #1d2021;
+  background-color: #ebdbb2;
+}
+
+nav p {
+  font-size: 25px;
+}
+
+#content {
+  background-color: #a89984;
+}

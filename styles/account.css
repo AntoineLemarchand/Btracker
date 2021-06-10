@@ -43,17 +43,27 @@ input[type=text], input[type=password] {
 input[type=checkbox] {
   background-color: #fbf1c7; 
   border: none;
+  cursor: pointer;
 }
 
 input[type=submit] {
   background-color: #cc241d;
+  color: #1d2021;
   border: none;
   padding: 1vh;
   border-radius: 10px;
+  cursor: pointer;
+  transition: color .3s, background-color .3s;
+}
+
+input[type=submit]:hover {
+  color: #cc241d;
+  background-color: #1d2021;
 }
 
 #register {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #282828;
@@ -65,6 +75,30 @@ input[type=submit] {
 }
 
 #register a {
-  color: #b8bb26;
+  background-color: #1d2021;
   text-decoration: none;
+  margin: 5px;
+  border-radius: 10px;
+  min-width: 25vh;
+  text-align: center;
+  transition: color .3s, background-color .3s;
+}
+
+#register a:first-child {
+  color: #b8bb26;
+
+}
+
+#register a:first-child:hover {
+  color: #1d2021;
+  background-color: #b8bb26;
+}
+
+#register a:nth-child(2) {
+  color: #fe8019;
+}
+
+#register a:nth-child(2):hover {
+  color: #1d2021;
+  background-color: #fe8019;
 }

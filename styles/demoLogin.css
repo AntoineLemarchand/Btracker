@@ -1,0 +1,59 @@
+#content form {
+  display: grid;
+  grid-template-rows: 15vh 15vh;
+  grid-template-columns: 15vh 15vh;
+}
+
+button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  border: none;
+  border-radius: 25px;
+  background-color: #fbf1c7;
+  cursor: pointer;
+  transition: color .3s, background-color .3s;
+}
+
+button p:first-child {
+  margin: 0;
+  font-size: 50px;
+}
+
+#sub {
+  color: #458588;
+}
+
+#sub:hover {
+  color: #fbf1c7;
+  background-color: #458588;
+}
+
+#dev {
+  color: #98971a;
+}
+
+#dev:hover {
+  color: #fbf1c7;  
+  background-color: #98971a;
+}
+
+#pm {
+  color: #d65d0e;
+}
+
+#pm:hover {
+  color: #fbf1c7;
+  background-color: #d65d0e;
+}
+
+#admin {
+  color: #cc241d;
+}
+
+#admin:hover {
+  color: #fbf1c7;
+  background-color: #cc241d;
+}
